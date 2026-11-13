@@ -16,7 +16,7 @@ const windowWrapper = (Component, windowKey) => {
             el.style.display = "block";
             gsap.fromTo(
                 el,
-                { scale: 0.8, oopacity: 0, y: 40 },
+                { scale: 0.8, opacity: 0, y: 40 },
                 {
                     scale: 1,
                     opacity: 1,

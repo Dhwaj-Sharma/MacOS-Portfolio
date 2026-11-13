@@ -6,7 +6,7 @@ import { useGSAP } from "@gsap/react";
 import useWindowStore from "#store/window";
 
 const Dock = () => {
-    const { windows, openWindow, closeWindow, focusWindow } = useWindowStore();
+    const { windows, openWindow, closeWindow } = useWindowStore();
     const dockRef = useRef(null);
 
     useGSAP(() => {
@@ -70,7 +70,6 @@ const Dock = () => {
         } else {
             openWindow(app.id);
         }
-        console.log(windows);
     };
 
     return (
